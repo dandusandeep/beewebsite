@@ -9,6 +9,8 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  // Load environment variables prefixed with REACT_APP_
+  envPrefix: ["VITE_", "REACT_APP_"],
   plugins: [
     react(),
     mode === 'development' &&
