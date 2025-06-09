@@ -36,6 +36,17 @@ npm i
 npm run dev
 ```
 
+### Environment variables
+
+Create a `.env` file in the project root to configure your WooCommerce URL and API key:
+
+```bash
+REACT_APP_WOOCOMMERCE_URL=https://beegears.com
+REACT_APP_MY_API_KEY=<your-api-key>
+```
+
+The `.env` file is ignored by git. Use `.env.example` as a reference when setting up your own environment.
+
 **Edit a file directly in GitHub**
 
 - Navigate to the desired file(s).

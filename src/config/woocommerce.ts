@@ -1,7 +1,9 @@
 
 // WooCommerce backend configuration
 export const WOOCOMMERCE_CONFIG = {
-  baseUrl: process.env.REACT_APP_WOOCOMMERCE_URL || 'https://beegears.com',
+  baseUrl: import.meta.env.REACT_APP_WOOCOMMERCE_URL || 'https://beegears.com',
+  // API key for authenticated requests (optional)
+  apiKey: import.meta.env.REACT_APP_MY_API_KEY || '',
   endpoints: {
     products: '/shop',
     productDetail: '/product',
